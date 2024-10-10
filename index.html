@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/0cf6585b12.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Carrinho de Compras</h1>
+        <i id="verCarrinho" onclick="mostrarCarrinho()" class="fas fa-shopping-cart"></i>
+    </header>
+
+    <div class="container">
+        <div id="produtos-container" class="produtos-container">
+            <div class="card">
+                <img src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2019/04/A-tal-da-Pizza-1.jpg?w=1200&h=1200&crop=1" alt="Produto 1">
+                <h3>Pizza de calabresa</h3>
+                <p>Preço: R$ 49.00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza calabresa', 49)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="card">
+                <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-1932-5a1b7911dfda6e3c351c30de564da267.jpg">
+                <h3>Pizza de mussarela</h3>
+                <p>Preço: R$ 52.00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza mussarela', 52)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="card">
+                <img src="https://m.psecn.photoshelter.com/img-get/I0000YPPJ07x0b6A/s/1200/I0000YPPJ07x0b6A.jpg" alt="Produto 3">
+                <h3>Pizza portuguesa</h3>
+                <p>Preço: R$ 50.00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza portuguesa', 50)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
